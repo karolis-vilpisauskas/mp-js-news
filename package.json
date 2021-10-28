@@ -1,0 +1,24 @@
+{
+  "name": "mp-js-news",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.4.16",
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/material": "latest",
+    "clsx": "latest",
+    "graphql": "^15.7.2",
+    "next": "latest",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
