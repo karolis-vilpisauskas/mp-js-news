@@ -16,7 +16,7 @@ import {
 } from "@mui/material";
 
 export default function Index() {
-  const [doGetPodcasts, { data, loading, error }] = useLazyQuery(getPodcasts, {
+  const [doGetPodcasts, { data, loading }] = useLazyQuery(getPodcasts, {
     fetchPolicy: "cache-and-network",
   });
 
@@ -25,8 +25,6 @@ export default function Index() {
   }, [doGetPodcasts]);
 
   const podcasts = data?.podcasts ?? [];
-
-  console.log(podcasts);
 
   if (loading) return <LinearProgress />;
 
